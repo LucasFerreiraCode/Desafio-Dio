@@ -1,0 +1,17 @@
+* {
+    padding: 0;
+    width: 0;
+}
+
+body {
+    background-image: url(./img/Imagen-projeto.jpg);
+    background: no-repeat;
+    width: 50%;
+    height: 50%;
+}
+
+.h2 {
+    display: flex;
+    justify-content: center;
+
+}
