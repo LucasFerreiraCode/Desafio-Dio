@@ -1,11 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Exercício Curso</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    <script src="./script.js"></script>
+
+    <h2 id="resultado"></h2>
+
+    <script>
+        let XP = prompt("Digite XP aqui")
+
+        let Nivel;
+        if (XP <= 1000) {
+            Nivel = "Ferro"
+        } else if (XP >= 1001 && XP <= 2000) {
+            Nivel = "Bronze"
+        } else if (XP >= 2001 && XP <= 5000) {
+            Nivel = "Prata"
+        } else if (XP >= 5001 && XP <= 7000) {
+            Nivel = "Ouro"
+        } else if (XP >= 7001 && XP <= 8000) {
+            Nivel = "Platina"
+        } else if (XP >= 8001 && XP <= 9000) {
+            Nivel = "Ascendente"
+        } else if (XP >= 9001 && XP <= 10000) {
+            Nivel = "Imortal"
+        } else if (XP >= 10001) {
+            Nivel = "Radiante"
+        }
+
+        document.getElementById("resultado").innerHTML = "O Herói de nome Chupisco está no nível de: " + Nivel;
+    </script>
 </body>
+
 </html>
