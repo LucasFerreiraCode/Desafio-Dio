@@ -6,13 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício Curso</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./img/icon-livro.svg">
 </head>
 
 <body>
 
-    <h2 id="resultado"></h2>
+    <div class="text-resultado">
+        <h2 id="mensagem"></h2>
+    </div>
 
     <script>
+
         let XP = prompt("Digite XP aqui")
 
         let Nivel;
@@ -34,7 +38,7 @@
             Nivel = "Radiante"
         }
 
-        document.getElementById("resultado").innerHTML = "O Herói de nome Chupisco está no nível de: " + Nivel;
+        document.getElementById("mensagem").innerHTML = "O Herói está no nível: " + Nivel;
     </script>
 </body>
 
